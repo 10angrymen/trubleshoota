@@ -268,7 +268,7 @@ export const PcapAnalyzerTool = () => {
                                         <div className="col-span-1 p-3 bg-black/40 rounded border border-green-900/20 flex flex-col gap-2">
                                             <span className="text-green-700 text-xs uppercase font-bold">Latency (RTT)</span>
                                             <div className="text-2xl font-mono text-green-400">{result.tcp_stats.avg_rtt_ms ? result.tcp_stats.avg_rtt_ms.toFixed(2) : '-'} <span className="text-sm text-green-800">ms</span></div>
-                                            <p className="text-[10px] text-green-700">Average Round Trip Time. > 100ms indicates slow network path.</p>
+                                            <p className="text-[10px] text-green-700">Average Round Trip Time. &gt; 100ms indicates slow network path.</p>
                                         </div>
                                         <div className="col-span-1 p-3 bg-black/40 rounded border border-green-900/20 flex flex-col gap-2">
                                             <span className="text-green-700 text-xs uppercase font-bold">Reliability</span>
