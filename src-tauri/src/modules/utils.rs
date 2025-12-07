@@ -104,12 +104,35 @@ pub struct SystemInfo {
     pub memory_total: u64,
 }
 
+use std::collections::HashMap;
+
+#[derive(Serialize, Deserialize, Clone, Debug)]
+pub struct Conversation {
+    pub source: String,
+    pub destination: String,
+    pub protocol: String,
+    pub bytes: u64,
+    pub packets: u64,
+}
+
+#[derive(Serialize, Deserialize, Clone, Debug, Default)]
+pub struct TcpAnalysisStats {
+    pub retransmissions: usize,
+    pub zero_window: usize,
+    pub window_full: usize,
+    pub resets: usize,
+    pub avg_rtt_ms: Option<f64>,
+}
+
 #[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct PcapAnalysisResult {
     pub packet_count: usize,
     pub duration_sec: f64,
     pub issues: Vec<PcapIssue>,
     pub top_talkers: Vec<String>,
+    pub conversations: Vec<Conversation>,
+    pub protocol_distribution: HashMap<String, usize>,
+    pub tcp_stats: TcpAnalysisStats,
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug)]

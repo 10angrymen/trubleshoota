@@ -34,4 +34,5 @@ local-ip-address = "0.6.5"
 pcap-parser = "0.17.0"
 packet = "0.1.4"
 tauri-plugin-dialog = "2.4.2"
+etherparse = "0.19.0"
 
