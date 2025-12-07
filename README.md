@@ -1,4 +1,4 @@
-# TrubleShoota 🛠️👹 Note: Image path assumes repo structure
+# TrubleShoota 🛠️👹 
 ![Trubleshoota Logo](src/assets/logo.png)
 
 **"DA BOYZ DIAGNOSTICS - IF IT AIN'T BROKE, FIX IT ANYWAY!"**
