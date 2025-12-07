@@ -1,4 +1,4 @@
-# TrubleShoota 🛠️👹 Note: Image path assumes repo structure
+# TrubleShoota 🛠️👹 
 ![Trubleshoota Logo](src/assets/logo.png)
 
 **"DA BOYZ DIAGNOSTICS - IF IT AIN'T BROKE, FIX IT ANYWAY!"**
@@ -92,4 +92,3 @@ If you want to tinker with the Mek code yourself, here is how you build it from 
 Got a better way to smash packets? Pull requests are welcome! Just make sure your code compiles and you don't break the build (or else...).
 
 ---
-*made with ❤️ and ☕ by the DeepMind Advanced Coding Team*
